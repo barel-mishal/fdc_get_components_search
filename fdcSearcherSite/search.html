@@ -9,15 +9,22 @@
 </head>
 
 <body>
-	<div>
-		<nav id="nevigetionlinks">
-			<a href="index.html">Home</a>
-			<a href="search.html">Foods Search</a>
-			<a href="search_Component.html">Component Search</a>
-			<a href="search_advence.html">Advanced Food Search</a>
-		</nav>
+<div class="grid">
+  <header>
+    <nav id="nevigetionlinks">
+      <a href="index.html" role="button" class="button-28">Home</a>
+      <a href="search.html" role="button" class="button-28">Foods Search</a>
+      <a href="search_Component.html" role="button" class="button-28">Component Search</a>
+      <a href="search_advence.html" role="button" class="button-28">Advanced Food Search</a>
+    </nav>
+  </header>
 
-		<div id="form">
+  <aside class="sidebar-left">
+    
+  </aside>
+
+  <article>
+    <div>
 			<form action="https://api.nal.usda.gov/fdc/v1/foods/search" method="GET" name="Component">
 				<input 
               type="text" 
@@ -36,6 +43,17 @@
      </form>
     </div>
     <script type="module" src="script.js"></script>
+  </article>
+
+  <aside class="sidebar-right">
+    
+  </aside>
+  
+  <footer>
+    
+  </footer>
 </div>
-  </body>
+<script type="module" src="script.js"></script>
+</body>
+
 </html>

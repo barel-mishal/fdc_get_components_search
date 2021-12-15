@@ -9,39 +9,51 @@
 </head>
 
 <body>
-	<nav id="nevigetionlinks">
-		<div>flksdjfkl</div>
-    <a href="index.html">Home</a>
-		<a href="search.html">Foods Search</a>
-		<a href="search_Component.html">Component Search</a>
-		<a href="search_advence.html">Advanced Food Search</a>
-	</nav>
+<div class="grid">
+  <header>
+    <nav id="nevigetionlinks">
+      <a href="index.html" role="button" class="button-28">Home</a>
+      <a href="search.html" role="button" class="button-28">Foods Search</a>
+      <a href="search_Component.html" role="button" class="button-28">Component Search</a>
+      <a href="search_advence.html" role="button" class="button-28">Advanced Food Search</a>
+    </nav>
+  </header>
 
-	<div>
-		<form 
-    action='https://server.barelmishal.repl.co/search' id="form-component-search">
-			<input 
-            type="search" 
-            name="qConponent" 
-            list="nutrients" 
-            id="query-component" 
-            autocomplete="off"/>
-            <datalist id="nutrients"></datalist>
-            <input
-              id="submit-component-search"
-              type="submit" 
-              name="submit"
-              value="Foods Search">    
-            </form>
-    </div>
+  <aside class="sidebar-left">
+    
+  </aside>
 
-    <script 
-    type="module" 
-    src="componentScript.js">
-    </script>
+  <article>
+      <form 
+      action='https://server.barelmishal.repl.co/search' id="form-component-search">
+        <input 
+          type="search" 
+          name="qConponent" 
+          list="nutrients" 
+          id="query-component" 
+          autocomplete="off"/>
+          <datalist id="nutrients"></datalist>
+          <input
+            id="submit-component-search"
+            type="submit" 
+            name="submit"
+            value="Component Search">    
+          </form>
+      <script 
+      type="module" 
+      src="componentScript.js">
+      </script>
+  </article>
+
+  <aside class="sidebar-right">
+    
+  </aside>
   
-  </body>
-</html>
+  <footer>
+    Footer
+  </footer>
+</div>
+<script type="module" src="script.js"></script>
+</body>
 
-<!-- https://fdc.nal.usda.gov/portal-data/external/nutrientList/search
-{"nutrientGid":1051,"pageNumber":1,"sortField":"nutrientPerHundred","sortDirection":null,"resultsPerPage":25,"foodTypes":["Foundation","Survey (FNDDS)","SR Legacy"]} -->
+</html>
