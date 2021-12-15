@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<nav id="nevigetionlinks">
+		<div>flksdjfkl</div>
+    <a href="index.html">Home</a>
+		<a href="search.html">Foods Search</a>
+		<a href="search_Component.html">Component Search</a>
+		<a href="search_advence.html">Advanced Food Search</a>
+	</nav>
+
+	<div>
+		<form 
+    action='https://server.barelmishal.repl.co/search' id="form-component-search">
+			<input 
+            type="search" 
+            name="qConponent" 
+            list="nutrients" 
+            id="query-component" 
+            autocomplete="off"/>
+            <datalist id="nutrients"></datalist>
+            <input
+              id="submit-component-search"
+              type="submit" 
+              name="submit"
+              value="Foods Search">    
+            </form>
+    </div>
+
+    <script 
+    type="module" 
+    src="componentScript.js">
+    </script>
+  
+  </body>
+</html>
+
+<!-- https://fdc.nal.usda.gov/portal-data/external/nutrientList/search
+{"nutrientGid":1051,"pageNumber":1,"sortField":"nutrientPerHundred","sortDirection":null,"resultsPerPage":25,"foodTypes":["Foundation","Survey (FNDDS)","SR Legacy"]} -->
