@@ -1,9 +1,10 @@
 const express = require('express');
 const axios = require('axios');
+const path = require('path');
 
-const { nuterientList } = require('./nutrients.js')
+const { nuterientList } = require('./nutrients.js');
 
-const app = express()
+const app = express();
 
 PORT = process.env.PORT || 3002
 
@@ -17,6 +18,8 @@ const parms = (id) => ({
       "resultsPerPage":25,
       "foodTypes":["Foundation","Survey (FNDDS)","SR Legacy"]
       });
+
+app.use("/", express.static(path.join(__dirname, 'fdcSearcherSite', 'index.html')))
 
 app.get('/search', async (req, res, next) => {
   const { qConponent } = req.query
