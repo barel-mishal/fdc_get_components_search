@@ -5,7 +5,7 @@ const { nuterientList } = require('./nutrients.js')
 
 const app = express()
 
-PORT = 3002
+PORT = process.env.PORT || 3002
 
 // https://fdc.nal.usda.gov/portal-data/external/nutrientList/search
 
