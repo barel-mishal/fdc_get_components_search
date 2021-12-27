@@ -12,7 +12,6 @@
 <div class="grid">
   <header>
     <nav id="nevigetionlinks">
-      <a href="example.html" role="button" class="button-28">example.html</a>
       <a href="index.html" role="button" class="button-28">Home</a>
       <a href="search.html" role="button" class="button-28">Foods Search</a>
       <a href="search_Component.html" role="button" class="button-28">Component Search</a>
@@ -21,23 +20,37 @@
   </header>
 
   <aside class="sidebar-left">
-    Left Sidebar
+    
   </aside>
 
   <article>
-    <main>
-      Food Data Central searcher This site provide easy methods to do a foods search in fdc site. What is food data central: FoodData
-      Central is an integrated data system that provides expanded nutrient profile data and links to related agricultural
-      and experimental research.
-    </main>
+    <div>
+			<form action="https://api.nal.usda.gov/fdc/v1/foods/search" method="GET" name="Component">
+				<input 
+              type="text" 
+              name="query" 
+              id="query">
+            <input 
+              name="api_key" 
+              id="api_key" 
+              value="dd4nolLmS5lCKsDpHg3TfxyeU2zHA4Rn6bfYAFrB" 
+              hidden>
+              <!-- hidden the api key - Moti Searching how to do that -->
+            <input
+              type="submit" 
+              name="submit"
+              value="Foods Search">
+     </form>
+    </div>
+    <script type="module" src="script.js"></script>
   </article>
 
   <aside class="sidebar-right">
-    Right Sidebar
+    
   </aside>
   
   <footer>
-    Footer
+    Barel copy reight
   </footer>
 </div>
 <script type="module" src="script.js"></script>

@@ -24,25 +24,25 @@
   </aside>
 
   <article>
-    <div>
-			<form action="https://api.nal.usda.gov/fdc/v1/foods/search" method="GET" name="Component">
-				<input 
-              type="text" 
-              name="query" 
-              id="query">
-            <input 
-              name="api_key" 
-              id="api_key" 
-              value="dd4nolLmS5lCKsDpHg3TfxyeU2zHA4Rn6bfYAFrB" 
-              hidden>
-              <!-- hidden the api key - Moti Searching how to do that -->
-            <input
-              type="submit" 
-              name="submit"
-              value="Foods Search">
-     </form>
-    </div>
-    <script type="module" src="script.js"></script>
+      <form 
+      action='http://localhost:3003/search' id="form-component-search">
+        <input 
+          type="search" 
+          name="qConponent" 
+          list="nutrients" 
+          id="query-component" 
+          autocomplete="off"/>
+          <datalist id="nutrients"></datalist>
+          <input
+            id="submit-component-search"
+            type="submit" 
+            name="submit"
+            value="Component Search">    
+          </form>
+      <script 
+      type="module" 
+      src="componentScript.js">
+      </script>
   </article>
 
   <aside class="sidebar-right">
@@ -50,10 +50,9 @@
   </aside>
   
   <footer>
-    
+    Barel copy reight
   </footer>
 </div>
-<script type="module" src="script.js"></script>
 </body>
 
 </html>
